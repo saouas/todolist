@@ -1,0 +1,13 @@
+body{
+    background-color:#F3752B
+}
+
+a{ 
+    outline: 0;
+    text-decoration: none;
+    color:white; 
+}
+
+a:hover{
+    color: black;
+}

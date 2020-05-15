@@ -8,9 +8,9 @@ This todolist is very helpful if you are someone who often forgets 🤔.
 Backend API REST hosted on a static VM instance.
 
 *3 routes :*
---- GET ALL
---- POST ADD
---- POST DEL
+- GET ALL
+- POST ADD
+- POST DEL
 
 ***How to deploy ?***
 1) Set up your VM instance.

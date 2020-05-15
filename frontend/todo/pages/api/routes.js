@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const add = async (task) => {
-  return await axios.post('http://localhost:8080/add',{
+  return await axios.post(`https://${process.env.DOMAIN}/add`,{
     task: task
   },{
     headers:{
@@ -10,8 +10,8 @@ const add = async (task) => {
   })
 };
 
-const del = async (id) => {
-  return await axios.post('http://localhost:8080/delete',{
+const del = async (id) => { 
+  return await axios.post(`https://${process.env.DOMAIN}/delete`,{
     id: id
   },{
     headers:{
@@ -21,7 +21,7 @@ const del = async (id) => {
 }
 
 const getAll = async () => {
-  return await axios.get('http://localhost:8080/all');
+  return await axios.get(`https://${process.env.DOMAIN}/all`);
 };
 
 module.exports = {add,getAll,del};

@@ -77,7 +77,7 @@ export default function Home(props) {
         setTasks(result.data);
       })
     })();
-  }, [tasks]);
+  },[]);
 
   const handleTask = async (e) => {
     e.preventDefault();
